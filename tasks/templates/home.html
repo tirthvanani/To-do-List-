@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1 class="task-heading">Tasks</h1>
+
+<div class="container">
+    <h1></h1>
+    <a href="{% url 'add' %}" class="open-popup-btn">Add Task</a>
+</div>
+
+<table class="tasks-table">
+    <thead>
+        <tr>
+            <th>S No.</th>
+            <th>Task Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in data %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ i.tname }}</td>
+            <td>{{ i.tdesc }}</td>
+            <td>
+                <a class="edit-btn" href="{% url 'update' i.id %}">
+                    <i class="fas fa-edit"></i> Edit
+                </a>
+                <a class="delete-btn" href="{% url 'delete' i.id %}">
+                    <i class="fas fa-trash-alt"></i> Delete
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}

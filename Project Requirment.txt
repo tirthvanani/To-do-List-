@@ -1,0 +1,14 @@
+To_Do List/Task Management System
+
+Models
+	->Tasks	(Table or class name)
+	  ->tname
+	  ->tdesc
+
+Step:1
+-> create a task model.
+
+Step:2
+->views:
+	-> home:[form to post data(create)]
+	-> [list of all the tasks]

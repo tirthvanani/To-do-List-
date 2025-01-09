@@ -1,0 +1,12 @@
+<div class="center-box">
+  <form action="" method="post" class="popup-form">
+      {% csrf_token %}
+      <label for="task-name">Task:</label>
+      <input type="text" id="task-name" name="name" value="{{ task.tname }}" required>
+
+      <label for="task-desc">Description:</label>
+      <input type="text" id="task-desc" name="desc" value="{{ task.tdesc }}" required>
+
+      <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,174 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    /* color: #333; */
+}
+
+.task-heading {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #4b4b4b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.add{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #4b4b4b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.edit-btn{
+    padding: 5px;
+    border: 2px rgb(202, 181, 181) solid ;
+    text-decoration: none;
+    background-color: rgb(103, 199, 103);
+    border-radius: 10px;
+}
+
+.delete-btn{
+    padding: 5px;
+    border: 2px rgb(202, 181, 181) solid ;
+    text-decoration: none;
+    background-color: rgb(255, 1, 1);
+    border-radius: 10px;
+    color: white;
+}
+
+.up_heading{
+    color: white;
+    background-color: rgb(53, 51, 49);
+    text-align: center;
+}
+
+.title{
+    font-size: 20px;
+}
+
+
+/* home page */
+
+.tasks-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: rgba(52, 50, 50, 0.35) 0px 5px 15px;
+}
+
+.tasks-table th, .tasks-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.tasks-table thead th {
+    background-color: #f4f4f4;
+}
+
+.tasks-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: #007BFF;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* add button css */
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between items */
+    align-items: center; /* Vertically centers the items */
+}
+
+.open-popup-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10%;
+}
+
+.open-popup-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Center Box Styling */
+.center-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: rgba(52, 50, 50, 0.35) 0px 5px 15px;
+    z-index: 1000;
+}
+
+/* Popup Form Styling */
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popup-form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.popup-form input {
+    /* width: 100%; */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-form .submit-btn {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-form .submit-btn:hover {
+    background-color: #0056b3;
+}
